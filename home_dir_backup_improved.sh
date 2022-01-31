@@ -19,4 +19,6 @@ echo "Therefore, I will save the file in the current directory: ${currentdir}"
 
 tar -cf ${currentdir}"$(date +%d-%m-%Y_%H-%M-%S)".tar ~/* 2>/dev/null
 
+echo "Backup Completed Successfully."
+
 exit 0
