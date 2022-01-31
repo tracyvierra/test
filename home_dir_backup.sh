@@ -5,7 +5,7 @@
 # Date Modified: 1/31/2022
 
 # Description:
-# This script will backup your home directory using tar.
+# This script will backup your home directory using tar and store the file in your home directory
 
 # Usage:
 # home_dir_backup.sh
