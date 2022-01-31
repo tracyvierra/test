@@ -13,7 +13,7 @@ currentdir=$(pwd)
 
 echo "Hello, $USER"
 echo "I will now back up your home directory, $HOME"
-echo 
+echo  ""
 echo "You are running this script from ${currentdir}"
 echo "Therefore, I will save the file in the current directory: ${currentdir}"
 
