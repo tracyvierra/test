@@ -8,7 +8,8 @@
 # This script will backup your home directory using tar and store the file in your current directory
 
 # Usage:
-# home_dir_backup.sh
+# home_dir_backup_improved_tv.sh
+
 currentdir=$(pwd)
 
 echo "Hello, ${USER^}!"
