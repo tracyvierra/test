@@ -6,3 +6,14 @@
 4) Quote Removal
 5) Redirection
 
+4 Stages of Expansion:
+
+Stage 1: Brace Expansion
+Stage 2: 
+	* Parameter Expansion
+	* Arithmetic Expansion
+	* Command Expansion
+	* Tilde Expansion
+Stage 3: Word Splitting
+Stage 4: Globbing (file name expansion)
+
