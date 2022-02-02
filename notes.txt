@@ -1,0 +1,8 @@
+5 steps the shell takes when processing the command line:
+
+1) Tokenization
+2) Command Identification
+3) Shell Expansions
+4) Quote Removal
+5) Redirection
+
