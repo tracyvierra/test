@@ -5,6 +5,7 @@
 3) Shell Expansions
 4) Quote Removal
 5) Redirection
+______________________________________
 
 4 Stages of Expansion:
 
@@ -16,4 +17,12 @@ Stage 2:
 	* Tilde Expansion
 Stage 3: Word Splitting
 Stage 4: Globbing (file name expansion)
+______________________________________
+
+Data Streams: 
+	* Stream 0 = Standard Input (stdin)
+	* Stream 1 = Standard Output (stdout)   
+	* Stream 2 = Standard Error (stderr)
+
+______________________________________
 
