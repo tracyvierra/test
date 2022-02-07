@@ -11,9 +11,10 @@
 # ./read.sh
 
 # echo "Enter your name, age, and town : "
-read -p "Please enter your name : " name
-read -p "Please enter your age : " age
-read -p "Please enter your town : " town
+read -t 15 -p "Please enter your name : " name
+read -t 15 -p "Please enter your age : " age
+read -t 15 -p "Please enter your town : " town
+
 echo "Your name is $name, you are $age years old, and you live in $town."
 
 
