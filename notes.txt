@@ -26,3 +26,30 @@ Data Streams:
 
 ______________________________________
 
+OPERATOR EXAMPLE MEANING
+-eq [ 2 -eq 2 ] Successful if the two numbers are equal
+
+-ne [ 2 -ne 2 ] Successful if the two numbers are not equal
+
+= [ $a = $b ] Successful if the two strings are equal
+
+!= [ $a != $b ] Successful if the two strings are not equal
+
+-z [ -z $c ] Successful if a string is empty
+
+-n [ -n $c ] Successful if a string is not empty
+
+-e [ -e /path/to/file ] Successful if a file system entry
+/path/to/file exists
+
+-f [ -f /path/to/file ] Successful if a file system entry
+/path/to/file exists and is a regular file
+
+-d [ -d /path/to/file ] Successful if a file system entry
+/path/to/file exists and is a directory
+
+-x [ -x /path/to/file ] Successful if a file system entry
+/path/to/file exists and is executable by the current user
+
+______________________________________
+
