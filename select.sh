@@ -13,9 +13,4 @@ select day in Monday Tuesday Wednesday Thursday Friday Saturday Sunday; do
 	echo "Today is $day"
 	break
 done
-
-
-
-
-
-
+PS3=" "
