@@ -15,7 +15,7 @@ echo " "
 read -s -n 4 -t 15 -p "Please enter your access code (4 digits) : " accesscode
 echo " "
 
-echo "$firstname, $lastname, $extension, $accesscode" >> $HOME/extensions.csv
+echo "$firstname,$lastname,$extension,$accesscode" >> $HOME/extensions.csv
 
 
 
