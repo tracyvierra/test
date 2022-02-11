@@ -92,6 +92,11 @@ ______________________________________
 
 ITERATING OVER THE CONTENTS OF FILES
 
+Syntax for process substitution
+
+<(command) # You can run one command...
+<(command1 | command2 | ... | commandN) #... Or an entire pipeline
+
 while read line; do
 commands...
 done < <(command)
@@ -108,6 +113,13 @@ while read line; do
 echo "$line"
 done < file1.txt
 
+Example Script: Iterating over each line of output from a
+command
+
+#!/bin/bash
+while read line; do
+echo "$line"
+done < <(ls $HOME)
 
 ______________________________________
 
