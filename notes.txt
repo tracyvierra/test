@@ -59,6 +59,20 @@ getopts - how to get command line options passed. 'get' the 'opt'ions
 
 example:
 
+while getopts "A:b" variable; do
+	case "$variable" in
+		A)
+			commands
+		;;
+		b)
+			commands
+		;;
+		\?)
+			commands
+		;;
+	esac
+done
+
 # Usage:
 # ./timer_project.sh -m <minutes> -s <seconds>
 
