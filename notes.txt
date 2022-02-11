@@ -89,3 +89,25 @@ done
 echo "Timer done at $(date +%m-%d-%Y_%H:%M:%S)!"
 
 ______________________________________
+
+ITERATING OVER THE CONTENTS OF FILES
+
+while read line; do
+commands...
+done < <(command)
+
+while read line; do
+commands...
+done < file
+
+Example Script: Iterating over a file line by line, and
+printing each line out
+
+#!/bin/bash
+while read line; do
+echo "$line"
+done < file1.txt
+
+
+______________________________________
+
