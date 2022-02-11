@@ -11,10 +11,10 @@
 # ./read-while-project.sh <filename>
 
 while read line; do
-    mkdir "$line"
+    mkdir "$(pwd)/$line"
 done < "$1"
 echo " "
-echo "Directories created."
+echo "Directories created in "$(pwd)"."
 echo " "
 
 
