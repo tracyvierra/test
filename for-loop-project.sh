@@ -11,7 +11,8 @@
 readarray -t urls < urls.txt
 
 for url in ${urls[@]}; do 
-	curl --head $url -o $url.txt 
+	curl --head $url -o $(echo $url | cut -d "." -f 2).txt 
+	 
 done
 
 
