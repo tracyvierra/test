@@ -137,3 +137,12 @@ done < <(ls $HOME)
 
 ______________________________________
 
+examples of logic checking for file (or directory) exists:
+
+
+if [ ! -d 1234 ]; then  # if the directory 1234 does not exist then make the directory.
+	mkdir 1234
+fi
+
+[ -d 1234 ] || mkdir 1234  # logic check using the or operator.  check if the directory exists, this fails and runs the second command.
+
