@@ -18,6 +18,8 @@ update_system () {
         fi
 }
 
+update_system >> $HOME/update_system_2.log 2>&1
+
 #apt-get update -y
 #apt-get dist-upgrade -y
 
