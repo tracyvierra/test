@@ -13,6 +13,8 @@
 update_system () {
         apt-get update -y
         apt-get dist-upgrade -y
+        apt-get autoremove -y
+        apt-get autoclean -y
         if [ -f /var/run/reboot-required ]; then
                 shutdown --reboot
         fi
