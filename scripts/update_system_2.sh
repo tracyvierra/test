@@ -18,7 +18,7 @@ update_system () {
         fi
 }
 #
-echo "Updating System on $(date)" >> /var/log/update_system.log
+echo "Updating System on $(date)" >> /var/log/update_system.log 2>&1
 update_system >> $HOME/update_system_2.log 2>&1
 echo "Update System Complete on $(date)" >> $HOME/update_system_2.log 2>&1
 echo "_____________________________________________" >> $HOME/update_system_2.log 2>&1
