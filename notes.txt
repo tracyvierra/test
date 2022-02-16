@@ -146,3 +146,17 @@ fi
 
 [ -d 1234 ] || mkdir 1234  # logic check using the or operator.  check if the directory exists, this fails and runs the second command.
 
+______________________________________
+
+Remote connection:
+
+for remote connections in scripts be sure to setup keys:
+
+How to configure SSH Public key-based authentication for a Linux/Unix
+The steps and commands are as follows:
+
+On your local system type: ssh-keygen
+Install public key into remote server: ssh-copy-id user@remote-server-ip-name
+Use ssh for password less login: ssh user@remote-server-ip-name
+
+______________________________________
