@@ -17,16 +17,12 @@ update_system () {
                 shutdown --reboot
         fi
 }
-
+#
+echo "Updating System on $(date)" >> /var/log/update_system.log
 update_system >> $HOME/update_system_2.log 2>&1
-
-#apt-get update -y
-#apt-get dist-upgrade -y
-
-#if [ -f /var/run/reboot-required ]; then
-#         shutdown --reboot
-#fi
-
+echo "Update System Complete on $(date)" >> $HOME/update_system_2.log 2>&1
+echo "_____________________________________________" >> $HOME/update_system_2.log 2>&1
+#
 
 
 
