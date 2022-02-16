@@ -29,6 +29,7 @@ update_system () {
         echo "Updating System on $(date)"
         echo " "
         update_system 
+        echo " "
         echo "Update System Complete on $(date)"
         echo "_____________________________________________"
         echo " "
