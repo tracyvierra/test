@@ -18,13 +18,22 @@ update_system () {
         fi
 }
 #
-echo "Updating System on $(date)" >> $HOME/update_system_2.log 2>&1
-echo " "  >> $HOME/update_system_2.log 2>&1
-update_system >> $HOME/update_system_2.log 2>&1
-echo "Update System Complete on $(date)" >> $HOME/update_system_2.log 2>&1
-echo "_____________________________________________" >> $HOME/update_system_2.log 2>&1
-echo " " >> $HOME/update_system_2.log 2>&1
+# echo "Updating System on $(date)" >> "$HOME"/update_system_2.log 2>&1
+# echo " "  >> "$HOME"/update_system_2.log 2>&1
+# update_system >> "$HOME"/update_system_2.log 2>&1
+# echo "Update System Complete on $(date)" >> "$HOME"/update_system_2.log 2>&1
+# echo "_____________________________________________" >> "$HOME"/update_system_2.log 2>&1
+# echo " " >> "$HOME"/update_system_2.log 2>&1
 #
+{ 
+        echo "Updating System on $(date)"
+        echo " "
+        update_system 
+        echo "Update System Complete on $(date)"
+        echo "_____________________________________________"
+        echo " "
+}  >> "$HOME"/update_system_2.log 2>&1
+
 
 
 
