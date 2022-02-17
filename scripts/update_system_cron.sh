@@ -6,10 +6,10 @@
 
 # Description:
 # This script will run apt-get update and dist-upgrade, also autoremove and autoclean and reboot if a reboot is required.
-# a log will be created in the $HOME directory.
+# a log will be created in the $HOME directory of root since you have to run the script with sudo.
 
 # Usage: 
-# ./update_system.sh 
+# sudo ./update_system.sh 
 
 update_system () {
         apt-get update -y
