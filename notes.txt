@@ -160,3 +160,22 @@ Install public key into remote server: ssh-copy-id user@remote-server-ip-name
 Use ssh for password less login: ssh user@remote-server-ip-name
 
 ______________________________________
+
+Output to both the screen and write to a file:
+
+command | tee -a "$log_file"
+
+______________________________________
+
+______________________________________
+
+______________________________________
+
+______________________________________
+
+______________________________________
+
+______________________________________
+
+
+
