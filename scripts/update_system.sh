@@ -2,10 +2,11 @@
 
 # Author: Tracy Vierra
 # Date Created: 2/16/2022
-# Date Modified: 2/16/2022
+# Date Modified: 2/17/2022
 
 # Description:
 # This script will run apt-get update and dist-upgrade, also autoremove and autoclean and reboot if a reboot is required.
+# a log will be created in the $HOME directory.
 
 # Usage: 
 # ./update_system.sh 
